@@ -37,10 +37,37 @@ void Massimo()
     }
     cout<<max;
 }
+void SommaProdotto()
+{
+    int a,b;
+    int ris;
+    cout<<"inserire il primo numero: ";
+    cin>>a;
+    cout<<"inserire il secondo numero: ";
+    cin>>b;
+    if (a>0)
+    {
+        if (b>0)
+        {
+            ris=a+b;
+        }
+        else 
+        {
+            ris=a*b;
+        }
+    }
+    else
+    {
+        ris=a*b;
+    }
+    cout<<"il risultato è "<<ris;
+}
+
 int main()
 {
     //Controllo();
-    Massimo();
+    //Massimo();
+    SommaProdotto();
 }
 
 
