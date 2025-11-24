@@ -62,12 +62,54 @@ void SommaProdotto()
     }
     cout<<"il risultato è "<<ris;
 }
+void Operazioni()
+{
+    float n1,n2,ris;
+    char operatore;
+    cout<<"inserire il primo numero: ";
+    cin>>n1;
+    cout<<"inserire il secondo numero: ";
+    cin>>n2;
+    cout<<"inserire l'operatore: ";
+    cin>>operatore;
+    switch (operatore)
+    {
+        case '+':
+        ris=n1+n2;
+        cout<<"somma= "<<ris;
+        break;
+        case '-':
+        ris=n1-n2;
+        cout<<"differenza= "<<ris;
+        break;
+        case '*':
+        ris=n1*n2,
+        cout<<"prodotto= "<<ris;
+        break;
+        case '/':
+        if (n2==0)
+        {
+            cout<<"errore";
+        }
+        else
+        {
+            ris=n1/n2;
+            cout<<"divisione= "<<ris;
+        }
+        break;
+        default:
+        cout<<"operazione inesistente";
+        break;
+    }
 
+
+}
 int main()
 {
-    //Controllo();
-    //Massimo();
+    Controllo();
+    Massimo();
     SommaProdotto();
+    Operazioni();
 }
 
 
