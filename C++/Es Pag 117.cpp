@@ -120,6 +120,47 @@ void Esercizio6 ()
         cout<<"errore";
     }
 }
+void Esercizio7 ()
+{
+    int num;
+    cin>>num;
+    if (num<-5 || num>10)
+    {
+        cout<<"il dato è fuori dall'intervallo";
+    }
+    else
+    {
+        cout<<"ok";
+    }
+}
+void Esercizio8 ()
+{
+    int x,y,z;
+    cout<<"metti i numeri di cui vuoi sapere la progressione";
+    cin>>x>>y>>z;
+    if (y-x==z-y)
+    {
+        cout<<"è una progressione aritmetica";
+    }
+    else
+    {
+        cout<<"non è una progressione aritmetica";
+    }
+}
+void Esercizio9 (float f, float c, float k)
+{
+    int cost;
+    cout<<"inserisci la temperatura da non superare";
+    cin>>cost;
+    if ((f+c+k)/3<cost)
+    {
+        cout<<"il riscaldamento è acceso";
+    }
+    else
+    {
+        cout<<"il riscaldamento non è acceso";
+    }
+}
 int main ()
 {
     //Esercizio1 (-5);
@@ -127,5 +168,8 @@ int main ()
     //Esercizio3 (true,false);
     //Esercizio4 ();
     //Esercizio5 ();
-    Esercizio6 ();
+    //Esercizio6 ();
+    //Esercizio7 ();
+    //Esercizio8 ();
+    //Esercizio9 (10,30,15);
 }
